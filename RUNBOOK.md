@@ -19,7 +19,16 @@ Read `state/log.json` (a list of posted pins). Stop and report "campaign finishe
 150 entries or today's UTC date is after 2026-12-16. Skip any URL listed in `state/skip.txt`.
 
 ## 2. Pick 5 URLs
-Take the first 5 URLs from `queue.txt` that are not in the log or skip list.
+**Every pin must link to a URL that has never been pinned before — on any day, by any route.**
+Build the "already pinned" set from ALL of these, then take the first 5 URLs from `queue.txt` not in it:
+- every `url` in `state/log.json`;
+- every URL in `state/skip.txt` (lines starting with `#` are comments) — includes pages Hamza pinned
+  by hand before the campaign;
+- every `pinterestData.pinLink` returned by Metricool `getScheduledPosts` (blogId 8139925,
+  fromDate 2025-01-01, toDate 30 days ahead, timezone Asia/Karachi) — it lists published posts too.
+Compare URLs normalized (lowercase, no trailing slash, ignore the `/fantasy-character-names/` path
+prefix, so the same tool page is never pinned twice under two paths). The 5 picked URLs must also be
+distinct from each other. If the queue runs out, stop and report it — never reuse a URL to fill a slot.
 
 ## 3. Prepare each tool
 ```bash
