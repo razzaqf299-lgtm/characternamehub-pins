@@ -1,0 +1,14 @@
+{
+ "url": "https://characternamehub.com/jedi-name-generator/",
+ "slug": "jedi-name-generator",
+ "h1": "🌌 Jedi Name Generator",
+ "meta_title": "Jedi Name Generator | Explore Lore-Friendly Star Wars Names",
+ "stated_number": null,
+ "sampled_count": 0,
+ "number": "500+",
+ "has_gender_split": false,
+ "male": [],
+ "female": [],
+ "any": [],
+ "extract_error": "Unterminated string starting at: line 1 column 65536 (char 65535)"
+}
