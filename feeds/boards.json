@@ -1,0 +1,17 @@
+{
+ "_note": "feed slug -> Pinterest board. Each feed URL https://characternamehub.com/pin-feeds/<slug>.xml must be connected to its board once in Pinterest Settings > Auto-publish.",
+ "dark-elf-names": {"board": "Dark Elf Names", "use_for": "dark elf, drow"},
+ "elf-names": {"board": "Elf Name Ideas", "use_for": "elves of any kind not covered by a more specific elf board (night, snow, astral, sea, female/male elf...)"},
+ "high-elf-names": {"board": "High Elf Names", "use_for": "high elf"},
+ "wood-elf-names": {"board": "Wood Elf Names", "use_for": "wood elf, forest elf"},
+ "half-elf-names": {"board": "Half Elf Names", "use_for": "half-elf"},
+ "dragon-names": {"board": "Dragon Names Ideas", "use_for": "dragons, wyverns, drakes"},
+ "dragonborn-names": {"board": "Dragonborn Names", "use_for": "dragonborn only"},
+ "werewolf-names": {"board": "Werewolf Name Ideas", "use_for": "werewolves, wolf packs, lycans"},
+ "ranger-names": {"board": "Ranger Names", "use_for": "rangers"},
+ "pokemon-names": {"board": "Pokemon Names", "use_for": "Pokemon and fakemon"},
+ "fantasy-character-names": {"board": "Fantasy Character Names", "use_for": "fantasy races, classes and characters (dwarf, orc, witch, paladin, vampire, angel, demon, jedi...)"},
+ "fantasy-creature-names": {"board": "Fantasy Creature Names", "use_for": "monsters, beasts, mythical creatures, pets/familiars (kaiju, griffin, hellhound...)"},
+ "fantasy-place-names": {"board": "Fantasy Place Names", "use_for": "kingdoms, cities, towns, taverns, guilds, clans, ships, planets, worlds"},
+ "game-anime-names": {"board": "Game & Anime Names", "use_for": "video game, anime, username/gamertag and pop-culture generators, titles and other ideas"}
+}

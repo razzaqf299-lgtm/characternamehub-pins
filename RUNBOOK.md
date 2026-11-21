@@ -1,7 +1,7 @@
 # Daily Pinterest pin run — characternamehub.com
 
-Each daily run makes **5 pins** for 5 different tool pages and schedules them in Metricool
-for the US evening. The campaign runs for **30 days / 150 pins** (Nov 17 – Dec 16, 2026, UTC run dates).
+Each daily run makes **5 pins** for 5 different tool pages and publishes them through
+**Pinterest RSS auto-publish** (Metricool's free plan stops at 20 pins/month, so it is no longer used). The campaign runs for **30 days / 150 pins** (Nov 17 – Dec 16, 2026, UTC run dates).
 
 Never pin test designs. Never reuse a URL that is already in `state/log.json`.
 
@@ -12,7 +12,9 @@ npm install --silent            # jsdom for extract.js
 pip install pillow --break-system-packages -q 2>/dev/null || true
 export CF_ACCOUNT=...  CF_TOKEN=...   # from the scheduled task's instructions
 ```
-Metricool brand (blogId): **8139925**, timezone Asia/Karachi.
+Publishing: each Pinterest board has an RSS feed `feeds/<slug>.xml` in this repo (map in `feeds/boards.json`).
+Hamza's site serves them at `https://characternamehub.com/pin-feeds/<slug>.xml` (WPCode snippet in
+`wordpress/`), and Pinterest Settings > Auto-publish turns every new feed item into a Pin within ~24 hours.
 
 ## 1. Check the campaign
 Read `state/log.json` (a list of posted pins). Stop and report "campaign finished" if it already has
@@ -24,8 +26,7 @@ Build the "already pinned" set from ALL of these, then take the first 5 URLs fro
 - every `url` in `state/log.json`;
 - every URL in `state/skip.txt` (lines starting with `#` are comments) — includes pages Hamza pinned
   by hand before the campaign;
-- every `pinterestData.pinLink` returned by Metricool `getScheduledPosts` (blogId 8139925,
-  fromDate 2025-01-01, toDate 30 days ahead, timezone Asia/Karachi) — it lists published posts too.
+- every `<link>` already in any `feeds/*.xml` file.
 Compare URLs normalized (lowercase, no trailing slash, ignore the `/fantasy-character-names/` path
 prefix, so the same tool page is never pinned twice under two paths). The 5 picked URLs must also be
 distinct from each other. If the queue runs out, stop and report it — never reuse a URL to fill a slot.
@@ -83,12 +84,13 @@ Copy the PNG to `pins/DATE/SLUG.png` in this repo, commit and push. The public l
 `https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/DATE/SLUG.png`
 — check it returns HTTP 200 before scheduling.
 
-## 8. Pick the board
-Get the current board list: call Metricool `createScheduledPost` as a draft with
-`pinterestData.boardId` = `"zz-list-boards-check"`; the error lists all boards with numeric ids
-(nothing is created). Use the exact topic board when one exists (e.g. "Dark Elf Names"); otherwise
-the best broad board (fantasy characters / creatures / places / games / anime…). Avoid "Quick Saves".
-If nothing fits, use the broadest fantasy board and mention it in the report.
+## 8. Pick the feed (board)
+Read `feeds/boards.json` and choose the ONE feed slug whose `use_for` best fits the tool. Always prefer
+the exact topic feed (dark elf -> `dark-elf-names`, any dragon -> `dragon-names`, any elf without its own
+board -> `elf-names`). Only use `dragonborn-names`, `ranger-names`, `werewolf-names`, `pokemon-names` etc.
+for that exact topic — never put an unrelated tool on a topic board (e.g. jedi or titles are NOT dragon
+names). Everything else goes to the broad feeds: `fantasy-character-names`, `fantasy-creature-names`,
+`fantasy-place-names` or `game-anime-names`.
 
 ## 9. Title and description
 - **Title:** `NUMBER ADJECTIVE SUBJECT Names With Meanings` — e.g. *2300+ Mysterious Dark Elf Names
@@ -96,14 +98,16 @@ If nothing fits, use the broadest fantasy board and mention it in the report.
 - **Description:** 1–2 short sentences (~150–220 characters), inspiring, saying what names they will
   get, the key features (filters, meanings, pronunciation…) and what to do (pick options, tap Generate).
 
-## 10. Schedule in Metricool
-Slots in **America/New_York** on the US evening that is in progress at run time:
-20:00, 20:45, 21:30, 22:15, 23:00. Convert to Asia/Karachi for `publicationDate` and `date`.
-Skip any slot less than 15 minutes in the future (shift to the next free 45-minute slot before 23:59 ET).
-`info`: autoPublish true, draft false, media [raw URL], text = description, providers [{"network":"pinterest"}],
-`pinterestData`: {boardId (numeric), pinTitle, pinLink = tool URL, pinNewFormat false, isAiGenerated true}.
+## 10. Publish via the feed
+```bash
+python3 feeds.py add FEED_SLUG --title "TITLE" --desc "DESCRIPTION" --link TOOL_URL --image RAW_IMAGE_URL
+```
+Then commit and push (the image, the feed file, and the log together). Pinterest picks up new items
+within ~24 hours and publishes them on the feed's board, oldest first. Do not use Metricool any more.
 
 ## 11. Log and report
-Append to `state/log.json`: {date, url, slug, layout, number, title, board, image_url, publish_time_et,
-metricool_planner_url}. Commit and push. Then send a short report: the 5 titles, boards, times, and
-any problems (generator failures, fallback model, missing boards).
+Append to `state/log.json`: {date, url, slug, layout, number, title, board, feed, image_url, route: "rss"}.
+Commit and push. Check that `https://characternamehub.com/pin-feeds/FEED_SLUG.xml` returns HTTP 200 and
+contains the new item (if it returns 404, the WPCode snippet is not active yet — the items are still saved
+in the repo and will publish once it is). Then send a short report: the 5 titles, boards, and any problems
+(generator failures, fallback model, feed URL not reachable).
