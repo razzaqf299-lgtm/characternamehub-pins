@@ -66,6 +66,10 @@ Prompt rules:
 Look at the image (downscale and Read it). Regenerate once if the subject is not recognizable, is cut
 off, has extra limbs/garbled anatomy, or contains text.
 
+**Franchise tools (Pokemon, Star Wars, anime, games…):** never paint copyrighted characters, creatures,
+logos or exact costumes. Paint an original scene that evokes the genre instead (a cozy hometown for a
+Pokemon town tool, an original robot for a mech tool, a generic hooded figure for a space-knight tool).
+
 ## 6. Compose the pin (1080×1920)
 Write a spec JSON and run `python3 compose.py spec.json`:
 ```json
@@ -85,12 +89,13 @@ Copy the PNG to `pins/DATE/SLUG.png` in this repo, commit and push. The public l
 — check it returns HTTP 200 before scheduling.
 
 ## 8. Pick the feed (board)
-Read `feeds/boards.json` and choose the ONE feed slug whose `use_for` best fits the tool. Always prefer
-the exact topic feed (dark elf -> `dark-elf-names`, any dragon -> `dragon-names`, any elf without its own
-board -> `elf-names`). Only use `dragonborn-names`, `ranger-names`, `werewolf-names`, `pokemon-names` etc.
-for that exact topic — never put an unrelated tool on a topic board (e.g. jedi or titles are NOT dragon
-names). Everything else goes to the broad feeds: `fantasy-character-names`, `fantasy-creature-names`,
-`fantasy-place-names` or `game-anime-names`.
+Read `feeds/boards.json` and choose the ONE feed whose `use_for` best fits the tool. Only these 6 feeds
+are connected in Pinterest; never invent a new feed slug. Never put an unrelated tool on a topic feed
+(e.g. Jedi or titles are NOT dragon names; Dragon Age is a game -> `game-anime-names`).
+
+**Every feed must contain at least one item** (Pinterest will not connect an empty feed). Before picking
+the day's URLs, check each feed in `feeds/boards.json`; for every feed with 0 items, pick the first unused
+queue URL that fits it and make that pin too, even if the day then has more than 5 pins (max 6).
 
 ## 9. Title and description
 - **Title:** `NUMBER ADJECTIVE SUBJECT Names With Meanings` — e.g. *2300+ Mysterious Dark Elf Names
