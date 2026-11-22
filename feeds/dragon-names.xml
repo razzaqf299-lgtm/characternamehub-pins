@@ -6,7 +6,15 @@
 <atom:link href="https://characternamehub.com/pin-feeds/dragon-names.xml" rel="self" type="application/rss+xml"/>
 <description>New name generator pins for the Dragon Names Ideas board.</description>
 <language>en-us</language>
-<lastBuildDate>Sat, 21 Nov 2026 04:33:43 +0000</lastBuildDate>
-
+<lastBuildDate>Sun, 22 Nov 2026 01:36:52 +0000</lastBuildDate>
+<item>
+<title>3500+ Majestic Chinese Dragon Names With Meanings</title>
+<link>https://characternamehub.com/chinese-dragon-name-generator/</link>
+<description>Find a majestic name for your Chinese dragon. Choose a gender, one of the 5 elements and an imperial, celestial, river or mountain style, then tap Generate for names with meanings and audio pronunciation.</description>
+<pubDate>Sun, 22 Nov 2026 01:36:52 +0000</pubDate>
+<guid isPermaLink="false">https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-22/chinese-dragon-name-generator.png</guid>
+<enclosure url="https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-22/chinese-dragon-name-generator.png" type="image/png" length="0"/>
+<media:content url="https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-22/chinese-dragon-name-generator.png" medium="image" type="image/png" width="1080" height="1920"/>
+</item>
 </channel>
 </rss>

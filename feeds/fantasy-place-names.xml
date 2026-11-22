@@ -6,7 +6,15 @@
 <atom:link href="https://characternamehub.com/pin-feeds/fantasy-place-names.xml" rel="self" type="application/rss+xml"/>
 <description>New name generator pins for the Fantasy Place Names board.</description>
 <language>en-us</language>
-<lastBuildDate>Sat, 21 Nov 2026 04:33:43 +0000</lastBuildDate>
-
+<lastBuildDate>Sun, 22 Nov 2026 01:36:52 +0000</lastBuildDate>
+<item>
+<title>2000+ Mighty Dwarven City Names With Meanings</title>
+<link>https://characternamehub.com/dwarven-city-name-generator/</link>
+<description>Build a legendary mountain hold for your world. Choose a name style and a location, then tap Generate for dwarven city names with meanings and audio pronunciation, from deep halls to forge towns.</description>
+<pubDate>Sun, 22 Nov 2026 01:36:52 +0000</pubDate>
+<guid isPermaLink="false">https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-22/dwarven-city-name-generator.png</guid>
+<enclosure url="https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-22/dwarven-city-name-generator.png" type="image/png" length="0"/>
+<media:content url="https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-22/dwarven-city-name-generator.png" medium="image" type="image/png" width="1080" height="1920"/>
+</item>
 </channel>
 </rss>
