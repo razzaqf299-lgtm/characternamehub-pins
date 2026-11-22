@@ -107,12 +107,14 @@ function run() {
 
 w.addEventListener('load', () => {
   setTimeout(() => {
+    let out;
     try {
-      console.log(JSON.stringify(run()));
+      out = JSON.stringify(run());
     } catch (e) {
-      console.log(JSON.stringify({ error: String(e) }));
+      out = JSON.stringify({ error: String(e) });
     }
-    process.exit(0);
+    // write fully before exiting: process.exit() right after console.log truncates piped output at 64KB
+    process.stdout.write(out + '\n', () => process.exit(0));
   }, 200);
 });
 setTimeout(() => { console.log(JSON.stringify({ error: 'timeout' })); process.exit(0); }, 120000);
