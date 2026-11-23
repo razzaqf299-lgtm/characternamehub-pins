@@ -310,5 +310,65 @@
   "feed": "fantasy-character-names",
   "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-22/githyanki-name-generator.png",
   "route": "rss"
+ },
+ {
+  "date": "2026-11-23",
+  "url": "https://characternamehub.com/asari-name-generator/",
+  "slug": "asari-name-generator",
+  "layout": "character",
+  "number": "3100+",
+  "title": "3100+ Graceful Asari Names With Meanings",
+  "board": "Game & Anime Names",
+  "feed": "game-anime-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-23/asari-name-generator.png",
+  "route": "rss"
+ },
+ {
+  "date": "2026-11-23",
+  "url": "https://characternamehub.com/dracthyr-name-generator/",
+  "slug": "dracthyr-name-generator",
+  "layout": "list",
+  "number": "2300+",
+  "title": "2300+ Ancient Dracthyr Names With Meanings",
+  "board": "Game & Anime Names",
+  "feed": "game-anime-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-23/dracthyr-name-generator.png",
+  "route": "rss"
+ },
+ {
+  "date": "2026-11-23",
+  "url": "https://characternamehub.com/demon-slayer-name-generator/",
+  "slug": "demon-slayer-name-generator",
+  "layout": "list",
+  "number": "5500+",
+  "title": "5500+ Fierce Demon Slayer Names With Meanings",
+  "board": "Game & Anime Names",
+  "feed": "game-anime-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-23/demon-slayer-name-generator.png",
+  "route": "rss"
+ },
+ {
+  "date": "2026-11-23",
+  "url": "https://characternamehub.com/redguard-name-generator/",
+  "slug": "redguard-name-generator",
+  "layout": "list",
+  "number": "4700+",
+  "title": "4700+ Proud Redguard Names With Meanings",
+  "board": "Fantasy Character Names",
+  "feed": "fantasy-character-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-23/redguard-name-generator.png",
+  "route": "rss"
+ },
+ {
+  "date": "2026-11-23",
+  "url": "https://characternamehub.com/mass-effect-name-generator/",
+  "slug": "mass-effect-name-generator",
+  "layout": "list",
+  "number": "8300+",
+  "title": "8300+ Epic Mass Effect Names With Meanings",
+  "board": "Game & Anime Names",
+  "feed": "game-anime-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-23/mass-effect-name-generator.png",
+  "route": "rss"
  }
 ]
