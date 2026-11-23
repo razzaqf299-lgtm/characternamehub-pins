@@ -154,7 +154,9 @@ def name_list(spec):
     f_sub = font("Montserrat", 70, 800)
     f_label = font("Montserrat", 92, 900)
     male, female = spec["male"][:12], spec["female"][:12]
-    f_name = fit("Fredoka", max(male + female, key=len), 470, 84, 600)
+    _probe = font("Fredoka", 84, 600)
+    widest = max(male + female, key=lambda n: _probe.getbbox(n)[2] - _probe.getbbox(n)[0])
+    f_name = fit("Fredoka", widest, 470, 84, 600)
     white, black = (255, 255, 255, 255), (0, 0, 0, 255)
 
     y = 80
