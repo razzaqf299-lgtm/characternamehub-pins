@@ -430,5 +430,65 @@
   "feed": "game-anime-names",
   "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-24/mech-name-generator.png",
   "route": "rss"
+ },
+ {
+  "date": "2026-11-25",
+  "url": "https://characternamehub.com/fantasy-character-names/tiefling-name-generator/",
+  "slug": "tiefling-name-generator",
+  "layout": "list",
+  "number": "1600+",
+  "title": "1600+ Infernal Tiefling Names With Meanings",
+  "board": "Fantasy Character Names",
+  "feed": "fantasy-character-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-25/tiefling-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-25",
+  "url": "https://characternamehub.com/earth-kingdom-name-generator/",
+  "slug": "earth-kingdom-name-generator",
+  "layout": "list",
+  "number": "1800+",
+  "title": "1800+ Strong Earth Kingdom Names With Meanings",
+  "board": "Game & Anime Names",
+  "feed": "game-anime-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-25/earth-kingdom-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-25",
+  "url": "https://characternamehub.com/decepticon-name-generator/",
+  "slug": "decepticon-name-generator",
+  "layout": "character",
+  "number": "1600+",
+  "title": "1600+ Menacing Decepticon Names With Meanings",
+  "board": "Game & Anime Names",
+  "feed": "game-anime-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-25/decepticon-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-25",
+  "url": "https://characternamehub.com/dryad-name-generator/",
+  "slug": "dryad-name-generator",
+  "layout": "character",
+  "number": "1300+",
+  "title": "1300+ Enchanting Dryad Names With Meanings",
+  "board": "Fantasy Creature Names",
+  "feed": "fantasy-creature-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-25/dryad-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-25",
+  "url": "https://characternamehub.com/fae-name-generator/",
+  "slug": "fae-name-generator",
+  "layout": "list",
+  "number": "6900+",
+  "title": "6900+ Magical Fae Names With Meanings",
+  "board": "Fantasy Character Names",
+  "feed": "fantasy-character-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-25/fae-name-generator.png",
+  "route": "csv"
  }
 ]
