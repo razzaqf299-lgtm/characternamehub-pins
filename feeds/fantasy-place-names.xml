@@ -6,7 +6,16 @@
 <atom:link href="https://characternamehub.com/pin-feeds/fantasy-place-names.xml" rel="self" type="application/rss+xml"/>
 <description>New name generator pins for the Fantasy Place Names board.</description>
 <language>en-us</language>
-<lastBuildDate>Thu, 26 Nov 2026 00:21:03 +0000</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 00:41:24 +0000</lastBuildDate>
+<item>
+<title>1200+ Epic Starship Names With Meanings</title>
+<link>https://characternamehub.com/starship-name-generator/</link>
+<description>Christen your fleet with 1200+ starship names with meanings, built from stars, virtues, places and myths with prefixes like UFS and ISV. Tap Generate and launch your next sci-fi vessel.</description>
+<pubDate>Fri, 27 Nov 2026 00:41:24 +0000</pubDate>
+<guid isPermaLink="false">https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-27/starship-name-generator.png</guid>
+<enclosure url="https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-27/starship-name-generator.png" type="image/png" length="0"/>
+<media:content url="https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-27/starship-name-generator.png" medium="image" type="image/png" width="1080" height="1920"/>
+</item>
 <item>
 <title>2100+ Majestic Fantasy Kingdom Names With Meanings</title>
 <link>https://characternamehub.com/fantasy-kingdom-name-generator/</link>

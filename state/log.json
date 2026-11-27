@@ -550,5 +550,65 @@
   "feed": "fantasy-place-names",
   "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-26/fantasy-kingdom-name-generator.png",
   "route": "csv"
+ },
+ {
+  "date": "2026-11-27",
+  "url": "https://characternamehub.com/epithet-generator/",
+  "slug": "epithet-generator",
+  "layout": "character",
+  "number": "1000+",
+  "title": "1000+ Legendary Fantasy Epithets With Meanings",
+  "board": "Fantasy Character Names",
+  "feed": "fantasy-character-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-27/epithet-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-27",
+  "url": "https://characternamehub.com/starship-name-generator/",
+  "slug": "starship-name-generator",
+  "layout": "character",
+  "number": "1200+",
+  "title": "1200+ Epic Starship Names With Meanings",
+  "board": "Fantasy Place Names",
+  "feed": "fantasy-place-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-27/starship-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-27",
+  "url": "https://characternamehub.com/spirit-name-generator/",
+  "slug": "spirit-name-generator",
+  "layout": "character",
+  "number": "950+",
+  "title": "950+ Ethereal Spirit Names With Meanings",
+  "board": "Fantasy Creature Names",
+  "feed": "fantasy-creature-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-27/spirit-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-27",
+  "url": "https://characternamehub.com/valheim-name-generator/",
+  "slug": "valheim-name-generator",
+  "layout": "list",
+  "number": "1800+",
+  "title": "1800+ Mighty Valheim Names With Meanings",
+  "board": "Game & Anime Names",
+  "feed": "game-anime-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-27/valheim-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-27",
+  "url": "https://characternamehub.com/steampunk-name-generator/",
+  "slug": "steampunk-name-generator",
+  "layout": "list",
+  "number": "7700+",
+  "title": "7700+ Inventive Steampunk Names With Meanings",
+  "board": "Fantasy Character Names",
+  "feed": "fantasy-character-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-27/steampunk-name-generator.png",
+  "route": "csv"
  }
 ]
