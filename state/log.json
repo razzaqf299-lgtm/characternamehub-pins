@@ -610,5 +610,65 @@
   "feed": "fantasy-character-names",
   "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-27/steampunk-name-generator.png",
   "route": "csv"
+ },
+ {
+  "date": "2026-11-28",
+  "url": "https://characternamehub.com/gargoyle-name-generator/",
+  "slug": "gargoyle-name-generator",
+  "layout": "character",
+  "number": "1800+",
+  "title": "1800+ Gothic Gargoyle Names With Meanings",
+  "board": "Fantasy Creature Names",
+  "feed": "fantasy-creature-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-28/gargoyle-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-28",
+  "url": "https://characternamehub.com/cult-name-generator/",
+  "slug": "cult-name-generator",
+  "layout": "character",
+  "number": "3400+",
+  "title": "3400+ Sinister Cult Names With Meanings",
+  "board": "Fantasy Place Names",
+  "feed": "fantasy-place-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-28/cult-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-28",
+  "url": "https://characternamehub.com/monk-name-generator/",
+  "slug": "monk-name-generator",
+  "layout": "list",
+  "number": "1200+",
+  "title": "1200+ Serene Monk Names With Meanings",
+  "board": "Fantasy Character Names",
+  "feed": "fantasy-character-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-28/monk-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-28",
+  "url": "https://characternamehub.com/fantasy-animal-name-generator/",
+  "slug": "fantasy-animal-name-generator",
+  "layout": "character",
+  "number": "3200+",
+  "title": "3200+ Wondrous Fantasy Animal Names With Meanings",
+  "board": "Fantasy Creature Names",
+  "feed": "fantasy-creature-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-28/fantasy-animal-name-generator.png",
+  "route": "csv"
+ },
+ {
+  "date": "2026-11-28",
+  "url": "https://characternamehub.com/witch-coven-name-generator/",
+  "slug": "witch-coven-name-generator",
+  "layout": "character",
+  "number": "1000+",
+  "title": "1000+ Mystical Witch Coven Names With Meanings",
+  "board": "Fantasy Place Names",
+  "feed": "fantasy-place-names",
+  "image_url": "https://raw.githubusercontent.com/razzaqf299-lgtm/characternamehub-pins/main/pins/2026-11-28/witch-coven-name-generator.png",
+  "route": "csv"
  }
 ]
